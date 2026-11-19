@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default: Theme A (Navy + Gold + White - Premium Hospitality) */
+  --color-primary: #0F172A;
+  --color-primary-hover: #1E293B;
+  --color-primary-light: #F1F5F9;
+  --color-secondary: #D97706;
+  --color-secondary-hover: #B45309;
+  --color-accent: #F59E0B;
+  --color-accent-light: #FEF3C7;
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F1F5F9;
+  --color-border: #E2E8F0;
+  --color-text: #0F172A;
+  --color-muted: #64748B;
+}
+
+/* Theme B: Heritage Terracotta / Beige / Ivory (Ideal for Dharamshalas, Bhakt Niwas & Ashrams) */
+[data-theme="theme-b"] {
+  --color-primary: #7C2D12;
+  --color-primary-hover: #9A3412;
+  --color-primary-light: #FFEDD5;
+  --color-secondary: #D97706;
+  --color-secondary-hover: #B45309;
+  --color-accent: #EA580C;
+  --color-accent-light: #FEF3C7;
+  --color-bg: #FFFDF7;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #FEF3C7;
+  --color-border: #FDE68A;
+  --color-text: #451A03;
+  --color-muted: #78350F;
+}
+
+/* Theme C: Modern Charcoal + Royal Blue + White (Clean Modern Hotel) */
+[data-theme="theme-c"] {
+  --color-primary: #111827;
+  --color-primary-hover: #1F2937;
+  --color-primary-light: #EFF6FF;
+  --color-secondary: #1D4ED8;
+  --color-secondary-hover: #1E40AF;
+  --color-accent: #0284C7;
+  --color-accent-light: #E0F2FE;
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F3F4F6;
+  --color-border: #E5E7EB;
+  --color-text: #111827;
+  --color-muted: #4B5563;
+}
+
+/* Custom smooth scrolling and utilities */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom subtle glass effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Pulse animation for floating button */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.animate-whatsapp-pulse {
+  animation: softPulse 2.5s infinite;
+}

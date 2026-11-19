@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ganganiwas-haridwar.example.com/sitemap.xml
